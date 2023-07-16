@@ -18,7 +18,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="img-box">
-          <img src="./icons_assets/restauranfood.jpg" alt="hero" />
+          <img src="./icons_assets/restauranfood.png" alt="hero" />
         </div>
       </div>
     </header>
