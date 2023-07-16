@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Form() {
+export default function Form(props) {
+  // const availableTimes = [17, 18, 19, 20, 21, 22];
+  const availableTimes = props.availableTimes;
+
   const [numPerson, setNumPerson] = useState(1);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -65,7 +68,7 @@ export default function Form() {
 
   return (
     <>
-      <div className="form-image"></div>
+      <div className="form-image" aria-label="image"></div>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <h1>Reserve a table</h1>
@@ -73,6 +76,8 @@ export default function Form() {
             <label htmlFor="numPerson">Number of Person</label>
             <input
               type="number"
+              min="1"
+              max="20"
               placeholder="5"
               name="diners"
               id="numPerson"
@@ -103,12 +108,15 @@ export default function Form() {
               value={time}
               onChange={(e) => setTime(e.target.value)}
             >
-              <option value="1700">5 PM</option>
+              {availableTimes.map((cur) => {
+                return <option>{cur}:00</option>;
+              })}
+              {/* <option value="1700">5 PM</option>
               <option value="1800">6 PM</option>
               <option value="1900">7 PM</option>
               <option value="2000">8 PM</option>
               <option value="2100">9 PM</option>
-              <option value="2200">10 PM</option>
+              <option value="2200">10 PM</option> */}
             </select>
           </div>
 
