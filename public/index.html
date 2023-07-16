@@ -7,9 +7,16 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="A website for Little Lemon restaurant serving Italian, Greek and Turkish food."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="og:title" content="Little Lemon Restaurant" />
+    <meta
+      name="og:description"
+      content="A website for Little Lemon restaurant serving Italian, Greek and Turkish food."
+    />
+    <meta name="og:image" content="%PUBLIC_URL%/icons_assets/Asset 20@4x.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -32,7 +39,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Little Lemon</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -302,5 +309,94 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- <div class="form-image"></div>
+    <div class="form-container">
+      <form action="#">
+        <h1>Reserve a table</h1>
+        <div class="form-group">
+          <label for="numPerson">Number of Person</label>
+          <input
+            type="number"
+            placeholder="5"
+            name="diners"
+            id="numPerson"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <select name="time" id="time" required>
+            <option value="1700">5 PM</option>
+            <option value="1800">6 PM</option>
+            <option value="1900">7 PM</option>
+            <option value="2000">8 PM</option>
+            <option value="2100">9 PM</option>
+            <option value="2200">10 PM</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            placeholder="Mark"
+            name="firstName"
+            id="firstName"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            placeholder="Webber"
+            name="lastName"
+            id="lastName"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="markxyz@abc.com"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="seating">Choose Seating Location</label>
+          <select name="seating" id="seating" required>
+            <option value="inside">Restaurant Inside</option>
+            <option value="lawn">Outside Lawn</option>
+            <option value="rooftop">Rooftop Area</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="occasion">Select Occasion</label>
+          <select name="occasion" id="occasion" required>
+            <option value="birthday">Birthday</option>
+            <option value="engagement">Engagement</option>
+            <option value="anniversery">Anniversery</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-cta btn-form">
+          Confirm Reservation
+        </button>
+      </form>
+    </div> -->
   </body>
 </html>

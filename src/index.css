@@ -101,6 +101,7 @@ header p {
   margin-bottom: 6rem;
 }
 
+.btn-cta,
 .btn-cta:link,
 .btn-cta:visited {
   text-decoration: none;
@@ -111,6 +112,8 @@ header p {
   font-size: 1.8rem;
   font-weight: 700;
   transition: all 0.3s;
+
+  border: none;
 }
 
 .btn-cta:hover,
@@ -348,4 +351,81 @@ footer a:visited {
 footer a:hover,
 footer a:active {
   color: #f4ce14;
+}
+
+.form-image {
+  height: 22rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(51, 51, 51, 0.5),
+      rgba(51, 51, 51, 0.5)
+    ),
+    url(../public/icons_assets/restaurant.jpg);
+  background-position: center;
+}
+
+.form-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  position: relative;
+  height: 105rem;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+form input,
+form select {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  background-color: rgba(#edefee, 0.5);
+  border: 1px solid #bbb;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 3px solid #bbb;
+  color: inherit;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rbga(#333, 0.1);
+  border-bottom: 3px solid #f4ce14;
+}
+
+form input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+form button {
+  display: block;
+  margin: 5rem auto 6.4rem;
+  cursor: pointer;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 6.4rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
