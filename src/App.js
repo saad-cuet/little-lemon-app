@@ -1,18 +1,17 @@
-import Nav from "./Components/Nav";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
-import Form from "./Components/BookingForm";
+import Homepage from "./Pages/Homepage";
+import BookingPage from "./Pages/BookingPage";
+import ConfirmationPage from "./Pages/ConfirmationPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Nav />
-      <Header />
-      <Main />
-      <Form />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

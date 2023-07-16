@@ -1,25 +1,27 @@
+import { NavLink } from "react-router-dom";
+
 export default function Nav() {
   return (
     <nav className="Navigation">
       <img src="./icons_assets/logo.svg" alt="Logo" />
       <ul className="Navigation-list">
         <li>
-          <a href="#">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <a href="#">About</a>
+          <NavLink>About</NavLink>
         </li>
         <li>
-          <a href="#">Menu</a>
+          <NavLink>Menu</NavLink>
         </li>
         <li>
-          <a href="#">Reservation</a>
+          <NavLink to="/booking">Reservation</NavLink>
         </li>
         <li>
-          <a href="#">Order Online</a>
+          <NavLink>Order Online</NavLink>
         </li>
         <li>
-          <a href="#">Login</a>
+          <NavLink>Login</NavLink>
         </li>
       </ul>
     </nav>

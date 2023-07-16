@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
@@ -11,9 +13,9 @@ export default function Header() {
             accusamus sint debitis eos, incidunt eligendi reiciendis asperiores
             rerum doloremque quisquam corrupti.
           </p>
-          <a href="#" className="btn-cta">
+          <Link to="/booking" className="btn-cta">
             Reserve a table
-          </a>
+          </Link>
         </div>
         <div className="img-box">
           <img src="./icons_assets/restauranfood.jpg" alt="hero" />

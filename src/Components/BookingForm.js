@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Form() {
   return (
     <>
@@ -84,9 +86,13 @@ export default function Form() {
             </select>
           </div>
 
-          <button type="submit" className="btn-cta btn-form">
+          {/* <button type="submit" className="btn-cta btn-form">
             Confirm Reservation
-          </button>
+          </button> */}
+
+          <Link to="/confirmation" className="btn-cta btn-form">
+            Confirm Reservation
+          </Link>
         </form>
       </div>
     </>
